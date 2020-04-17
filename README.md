@@ -10,6 +10,7 @@ Create `FirstView.swift` and `SecondView.swift`, add content to them the way you
 In **ViewController.swift** create `UISegmentControl` and `contentView`
 
 ```
+swift
 let segmentViewController : UISegmentedControl = {
     let segmentControl = UISegmentedControl(items: ["FirstView","SecondView"])
     segmentControl.selectedSegmentIndex = 0
@@ -26,6 +27,7 @@ let contentView : UIView = {
 ```
 and add it into **viewDidLoad()**
 ```
+swift
 override func viewDidLoad() {
     super.viewDidLoad()
     view.addSubview(segmentViewController)
@@ -40,6 +42,7 @@ override func viewDidLoad() {
 Create method `setLayout()` to set constraints programmatically
 
 ```
+swift
 func setLayout(){
     NSLayoutConstraint.activate([
         segmentViewController.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
@@ -61,6 +64,7 @@ func setLayout(){
 Add function `selectIndex(sender: UISegmentedControl)`so that we can identify when segment is changed and change view as per that
 
 ```
+swift
 @objc func selectIndex(sender: UISegmentedControl){
     if sender.selectedSegmentIndex == 0{
         setPersonalView()
@@ -88,6 +92,7 @@ Add function `selectIndex(sender: UISegmentedControl)`so that we can identify wh
 create function `setStartView()`
 
 ```
+swift
 func setStartView(){
     contentView.addSubview(firstView)
     firstView.isHidden = false
