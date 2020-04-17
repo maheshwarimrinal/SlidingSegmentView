@@ -32,10 +32,10 @@ class ViewController: UIViewController {
         view.addSubview(segmentViewController)
         view.addSubview(contentView)
         setLayout()
-        setPersonalView()
+        setStartView()
     }
     
-    func setPersonalView(){
+    func setStartView(){
         contentView.addSubview(firstView)
         firstView.isHidden = false
         secondView.isHidden = true
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     
     @objc func selectIndex(sender: UISegmentedControl){
         if sender.selectedSegmentIndex == 0{
-            setPersonalView()
+            setStartView()
         }
         if sender.selectedSegmentIndex == 1{
             view.reloadInputViews()
