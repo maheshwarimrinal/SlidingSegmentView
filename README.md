@@ -3,7 +3,7 @@
 ## Step 1 :
 Create number of UIView's you want to switch.
 
-Create **FirstView.swift** and **SeconView.swift**, add content to them the way you wat to display.
+Create `FirstView.swift` and `SeconView.swift`, add content to them the way you wat to display.
 
 ## Step 2: 
 
