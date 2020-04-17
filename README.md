@@ -37,6 +37,27 @@ override func viewDidLoad() {
 
 ## Step 3:
 
+Create method `setLayout()` to set constraints programmatically
+
+```
+func setLayout(){
+    NSLayoutConstraint.activate([
+        segmentViewController.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+        segmentViewController.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+        segmentViewController.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+        segmentViewController.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+        segmentViewController.heightAnchor.constraint(equalToConstant: 30),
+        
+        contentView.topAnchor.constraint(equalTo: segmentViewController.bottomAnchor, constant: 20),
+        contentView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+        contentView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
+        contentView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor)
+    ])
+}
+```
+
+## Step 4:
+
 Add function `selectIndex(sender: UISegmentedControl)`so that we can identify when segment is changed
 
 ```
@@ -62,26 +83,6 @@ Add function `selectIndex(sender: UISegmentedControl)`so that we can identify wh
 }
 ```
 
-## Step 4:
-
-Create method `setLayout()` to set constraints programmatically
-
-```
-func setLayout(){
-    NSLayoutConstraint.activate([
-        segmentViewController.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
-        segmentViewController.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-        segmentViewController.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-        segmentViewController.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
-        segmentViewController.heightAnchor.constraint(equalToConstant: 30),
-        
-        contentView.topAnchor.constraint(equalTo: segmentViewController.bottomAnchor, constant: 20),
-        contentView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
-        contentView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
-        contentView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor)
-    ])
-}
-```
 ## Step 5:
 
 create function `setStartView()`
