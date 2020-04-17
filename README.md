@@ -1,4 +1,4 @@
-# SlidingSegmentView
+# SlidingSegmentView with UIView Change
 
 ## Step 1 :
 Create number of UIView's you want to switch.
@@ -58,7 +58,7 @@ func setLayout(){
 
 ## Step 4:
 
-Add function `selectIndex(sender: UISegmentedControl)`so that we can identify when segment is changed
+Add function `selectIndex(sender: UISegmentedControl)`so that we can identify when segment is changed and change view as per that
 
 ```
 @objc func selectIndex(sender: UISegmentedControl){
