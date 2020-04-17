@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B47134132449CAB00027E637 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47134122449CAB00027E637 /* FirstView.swift */; };
+		B47134152449CABC0027E637 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47134142449CABC0027E637 /* SecondView.swift */; };
 		B4858C382431B55700E6EE11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4858C372431B55700E6EE11 /* AppDelegate.swift */; };
 		B4858C3A2431B55700E6EE11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4858C392431B55700E6EE11 /* SceneDelegate.swift */; };
 		B4858C3C2431B55700E6EE11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4858C3B2431B55700E6EE11 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B47134122449CAB00027E637 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		B47134142449CABC0027E637 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		B4858C342431B55700E6EE11 /* SlidingSegmentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlidingSegmentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4858C372431B55700E6EE11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4858C392431B55700E6EE11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				B4858C402431B55B00E6EE11 /* Assets.xcassets */,
 				B4858C422431B55B00E6EE11 /* LaunchScreen.storyboard */,
 				B4858C452431B55B00E6EE11 /* Info.plist */,
+				B47134122449CAB00027E637 /* FirstView.swift */,
+				B47134142449CABC0027E637 /* SecondView.swift */,
 			);
 			path = SlidingSegmentView;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4858C3C2431B55700E6EE11 /* ViewController.swift in Sources */,
+				B47134152449CABC0027E637 /* SecondView.swift in Sources */,
+				B47134132449CAB00027E637 /* FirstView.swift in Sources */,
 				B4858C382431B55700E6EE11 /* AppDelegate.swift in Sources */,
 				B4858C3A2431B55700E6EE11 /* SceneDelegate.swift in Sources */,
 			);
